@@ -82,7 +82,7 @@ for i = 1:slide_num
                 % 绘图
                 if ~isempty(positions)
                     figure;
-                    distances = positions*fs/fftlen*340*T/(f1-f0);
+                    distances = positions*fs/fftlen*340*T/abs(f1-f0);
                     plot(distances);
                 end
                 positions = [];
